@@ -245,6 +245,8 @@ public class MecanumDrive {
                 PARAMS.logoFacingDirection, PARAMS.usbFacingDirection));
 
         voltageSensor = hardwareMap.voltageSensor.iterator().next();
+
+        //SRK - Changing the Localizer to PINPOINT
         localizer = new PinpointLocalizer(hardwareMap, PARAMS.inPerTick, pose);
        // localizer = new DriveLocalizer(pose);
 
